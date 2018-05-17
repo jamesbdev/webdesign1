@@ -61,7 +61,7 @@ header {
 }
 
 nav {
-  width: 90%;
+  width: 95%;
   margin: 0px auto;
   padding-top: 20px;
   height: 25%;
@@ -83,20 +83,16 @@ nav a:active, nav a:hover {
 
 li {
   display: inline-block;
-  padding: 1.5em;
+  padding: 2em 5em;
   text-align: center;
 
 }
 
-
-
-
 nav ul {
   margin: 0 auto;
-
-  width: 70%;
+  width: 95%;
   text-align: center;
-  }
+}
 
 
 .photo{
