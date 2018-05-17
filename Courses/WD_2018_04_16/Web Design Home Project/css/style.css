@@ -318,13 +318,15 @@ textarea {
   font-family: helvetica, arial, sans-serif;
   text-transform: uppercase;
   font-weight: bold;
-  width: 10em;
+  width: 14em;
   margin: 0 auto;
   border: none;
-  border-radius: 1em;
+  border-radius: 3em;
   margin-top: 3em;
-  margin-bottom: 6em;
+  margin-bottom: 10em;
   cursor: pointer;
+  padding: 1.5em 2em;
+
 
 
 }
