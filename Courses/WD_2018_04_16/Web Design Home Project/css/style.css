@@ -65,6 +65,9 @@ nav {
   margin: 0px auto;
   padding-top: 20px;
   height: 25%;
+  display: flex;
+
+
 }
 
  nav a {
@@ -72,7 +75,6 @@ nav {
   color: black;
   text-transform: uppercase;
   font-family: helvetica, arial, sans-serif;
-  display: inline-block;
   font-weight: bold;
 }
 
@@ -82,7 +84,7 @@ nav a:active, nav a:hover {
 }
 
 li {
-  display: inline-block;
+  -display: inline-block;
   padding: 2em 4em;
   text-align: center;
 
@@ -90,8 +92,9 @@ li {
 
 nav ul {
   margin: 0 auto;
-  width: 95%;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 
@@ -135,6 +138,10 @@ header p {
   font-family: helvetica, arial, sans-serif;
   cursor: pointer;
   letter-spacing: .05em;
+}
+
+.about-button:hover {
+  background-color: #f5fafa;
 }
 
 
@@ -246,6 +253,12 @@ hr{
 
 }
 
+.button-project-info:hover {
+  background-color: #f5fafa;
+}
+
+
+
 
 
 
@@ -274,8 +287,10 @@ hr{
   -width: 33%;
   background-color:#e0efef;
   padding: 1em;
+}
 
-
+.skills:hover {
+  background-color: #bedede;
 }
 
 
@@ -368,9 +383,10 @@ textarea {
   margin-bottom: 10em;
   cursor: pointer;
   padding: 1.3em 2em;
+}
 
-
-
+.button:hover {
+  background-color: #bedede;
 }
 
 
