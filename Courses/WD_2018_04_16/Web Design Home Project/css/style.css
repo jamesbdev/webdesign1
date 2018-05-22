@@ -148,6 +148,10 @@ header p {
 
 /* main section  */
 
+*:focus {
+  outline: none;
+}
+
 body {
   background-color: #fffffc;
 }
@@ -304,6 +308,8 @@ hr{
 
 .skills-img {
   margin: 0 auto;
+  width: 50%;
+  height: 50%;
 
 }
 
@@ -335,7 +341,10 @@ form {
   margin: 0 auto;
   display: block;
 
+
 }
+
+
 
 fieldset {
   width: 60%;
