@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" >
+    <title>forms</title>
+</head>
+
+<body>
+<h1>HTML FORMS</h1>
+<p>run with file:// protocol to demonstrate GET method</p>
+
+<hr />
+<div>
+    <!--
+    step1) create form tag and insert form attributes
+        * action	=> the path and the name of the server side file that will handle form data
+        * name 		=> this is the name of the form
+        * method 	=> the kind of data communication
+            * GET	=> faster, but it handles smaller amount of data and it exposes data
+                            it will create a query string
+                            ?key=value&key=value
+                            ?userName=emiliano
+                            &psWord=bubu
+                            &age=20
+                            &hobbies=reading&hobbies=running
+                            &cv=cartoon-man-jumping-27676356.jpg
+                            &about=friends
+                            &feedback=hello
+                            &allowAE=false#
+                        * use GET for search forms
+                        * use GET to have a bookmarkable result page
+            * POST	=> the secure way to communicate data: it will hide data
+                        * emails
+                        * file uploads
+                        * sensitive data
+        * enctype	=> set it to multipart/ form data if you want to upload a file
+
+    step2) split the form into fieldsets (if needed)
+        * describe fieldsets with legends
+
+
+    step3) insert labels (short text to describe an input field)
+
+    step4) inputs and type attr
+        * text
+        * password (bullets instead of letters)
+        * radio => use radio buttons to allow users select only one answer
+            *** all connected radio buttons need same name ***
+        * checkbox => use them to allow the user to check/ uncheck multiple options
+        * hidden	=> use it to send values without exposing it to the user
+        * file => use it to upload files
+
+   * use SELECT / OPTION to create drop down list menus
+   * textarea	=> use it for long texts / messages
+
+   step5) insert buttons
+           * button
+            * reset		=> clears form inputs
+            * submit	=> sends data to server side
+        * input type button	=> empty button
+-->
+<form action="#" name="registrationForm" method="post" enctype="multipart/form-data">
+    <!--fieldset*4>legend-->
+    <fieldset>
+        <legend>about you</legend>
+        <!--
+            LABEL and INPUT are INLINE ELEMENTS
+        -->
+        <p><label for="usr">please insert your username</label></p>
+        <p><input id="usr" type="text" name="userName" value="" placeholder="username here"></p>
+
+        <p><label for="psw">please insert your password</label></p>
+        <p><input id="psw" type="password" name="psWord" value="" placeholder="password here"></p>
+
+
+        <p><label >please select your age group</label></p>
+        <p><input  type="radio" name="age" value="18-" disabled> less than 18</p>
+        <p><input  type="radio" name="age" value="20" checked> 20 - 30</p>
+        <p><input  type="radio" name="age" value="30" > 30 - 40</p>
+        <p><input  type="radio" name="age" value="40" > 40 - 50</p>
+        <p><input  type="radio" name="age" value="50" > 50+</p>
+
+ 
+        <p><label >please select your hobbies</label></p>
+        <p><input  type="checkbox" name="hobbies" value="reading" checked> reading</p>
+        <p><input  type="checkbox" name="hobbies" value="running" > running</p>
+        <p><input  type="checkbox" name="hobbies" value="gaming" > gaming</p>
+        <p><input  type="checkbox" name="hobbies" value="music" > music</p>
+        <p><input  type="checkbox" name="hobbies" value="wasting time" disabled> wasting time</p>
+
+
+        <p><label for="cv">please upload your CV</label></p>
+        <p><input id="cv" type="file" name="cv" ></p>
+    </fieldset>
+
+    <fieldset>
+        <legend>about us</legend>
+
+        <p><label for="aboutUs">how did you know about us?</label></p>
+        <p>
+            <select name="about" id="aboutUs" ><!--multiple-->
+                <option value="null"></option>
+                <option selected value="google">google</option>
+                <option value="friends">friends</option>
+                <option disabled value="ads">advertisement</option>
+                <option value="other">other</option>
+            </select>
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>feedback</legend>
+        <p><label for="feedback">write here your feedback</label></p>
+        <p>
+            <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="your feedback here..."></textarea>
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>action</legend>
+        <p>
+            <button type="reset">clear form</button>
+            <button type="submit">submit form</button>
+        </p>
+        <p>
+            <button type="button">this does nothing</button>
+            <input disabled type="button" value="another custom button with no behaviour">
+        </p>
+    </fieldset>
+
+    <input type="hidden" name="allowAE" value="false">
+
+</form>
+</div>
+
+
+
+<br /><br /><br /><br /><br /><br /><br />
+
+<br /><br /><br /><br />
+
+<hr />
+
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+/* 
+	this is a
+	MULTILINE 
+	CSS COMMENT
+	ctrl + shift + /
+ */
+
+
+/*
+	* do not nest css comments
+	* do not write html comments in css
+	* use comments to describe your sections
+	* USE COMMENTS!!! THEY WILL SAVE YOUR LIFE!!!!
+*/
+
+/*
+	SELECTORS
+	* TAGNAME selectors
+	* IDs
+	* CLASSES
+	* DESCENDANT selectors
+*/
+
+/*tag name selector:
+	selecting ALL elements for this tag 
+*/
+p {
+    color: #333;
+}
+
+h1 {
+    text-align: right;
+    text-align: left;
+    text-align: justify;
+    text-align: center;
+
+    text-decoration: underline;
+    text-decoration: overline;
+    text-decoration: underline overline;
+    text-decoration: line-through;
+    text-decoration: none;
+
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+}
+
+
+
+/*
+	IDs
+	* IDs are unique identifiers
+	* you cannot put spaces in id names => myPar rather than my par
+	* you can only use one ID once per page
+	* you select IDs using #idName notation
+
+	===================
+	- ids are the most specific selectors :/
+	- not reusable in the same page :'(
+	we tend to use IDs more for JS rather than in css
+	===================
+
+*/
+#myPar {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+/*
+	CLASSES
+	* use CLASSES to group elements
+	* you cannot put spaces in CLASS names
+	* you can give the same element multiple classes
+	* you select CLASSES using .className notation
+*/
+.box {
+    background-color: #f00;
+    color: #fff;
+    /*absolute / fixed sizing*/
+    width: 500px;
+    /*relative / fluid sizing*/
+    width: 90%;
+    height: 160px;
+    border: 5px double blue;
+    border-left:10px dotted green;
+}
+
+
+/*
+	DESCENDANT SELECTORS
+	A B => selecting element(s) B that belong to element(s) A
+	Mary's cat
+
+	A B C => c inside b inside a
+
+	Mary's cat's nails
+
+*/
+/* selecting ALL div tags*/
+div {
+    border:1px solid #000;
+}
+
+/* selecting ALL p tags that belong to ANY divs */
+div p {
+    font-size: 30px;
+}
+
+/*you can mix ids / classes / tag name selectors
+to create  very specific descendant selectors */
+/* all p tags inside ANY element with a class of
+ containerDiv*/
+.containerDiv p {
+    color: deepskyblue;
+}
+
+
+/*
+<p class="box">
+<div class="box">
+
+.box    =>  ps and divs
+p.box   =>  only ps with a class of box
+div.box =>  only divs with a class of box
+
+*/
+
+.lastDiv {
+    /*
+    centering a block level element horizontally
+    1) set the width
+    2) set margin left and margin right as auto
+    */
+    width: 70%;
+   /* margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 400px;*/
+    margin: 100px auto 400px;
+    text-align: justify;
+    background-color: cornflowerblue;
+    padding:50px;
+    border:10px solid red;
+    /*css default box model*/
+    box-sizing: content-box;
+    /*css 3 box model*/
+    box-sizing: border-box;
+
+    height:200px;
+    overflow: visible;
+    overflow: hidden;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+
+/*
+padding / margin shorthands:
+
+
+1) margin : 20px => top, left, right, bottom
+
+2) margin : 20px 40px => 20px top/ bottom
+                         40px left/right
+
+3) margin : 10px 20px 30px => 10px top
+                              20px left and right
+                              30px bottom
+
+4) margin : 10px 20px 30px 40px
+                           => top 10px
+                              right 20px
+                              bottom 30px
+                              left 40px
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+

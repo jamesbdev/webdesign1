@@ -1,0 +1,6 @@
+TO CREATE A PROJECT IN WEBSTORM:
+
+1: click on "CREATE NEW PROJECT"
+2: click on "..." to browse for project location
+3: select the folder that contains / will contain all assets
+4: click on "CREATE"

@@ -1,0 +1,48 @@
+
+TAGS: describe pieces of content or represent elements
+ATTRIBUTES: are used to provide further info about the current tag
+
+
+*** REGULAR TAGS *** 
+open tag      closing tag
+<tag attr="value" attr="value" attr="value"   >content</tag>
+
+<p>some text</p>
+
+
+
+*** SELF CLOSING TAGS ***
+<tag   attr="value"     >
+<img src="pic.jpg">
+
+=================================================================
+
+tre main tags:
+html, head, body
+see day1/demo1.html
+
+=================================================================
+
+FRONT END / CLIENT SIDE:
+
+JavaScript   	=> behaviour	
+CSS  		=> presentation
+HTML 		=> content
+
+-----------------------------------
+
+BACK END / SERVER SIDE:
+php / nodeJS / c / python / ruby 
+
+-----------------------------------
+
+
+
+
+
+
+
+
+
+
+

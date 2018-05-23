@@ -1,0 +1,255 @@
+/*-------------------------------------
+                       CSS RESET SECTION
+---------------------------------------*/
+/* =====================   CSS RESET SECTION ==== */
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0b2 | 201101 */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output,
+ruby, section, summary, time, mark,
+audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+img{vertical-align: top;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, menu, nav,
+section, canvas, main { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+html, body{  width: 100%;  height: 100%;  }
+
+
+
+
+
+
+/*-------------------------------------
+                      GENERAL  SECTION
+---------------------------------------*/
+    body {
+        font-family: Arial, Helvetica, SansSerif;
+    }
+
+    h1 {
+
+        font-size: 3em;
+
+
+
+    }
+
+    #wrapper {
+        width: 70%;
+        margin: 0 auto;
+        -display: flex;
+    }
+
+    a {
+        text-decoration: none;
+        color:
+
+    }
+/*-------------------------------------
+                      HEADER SECTION
+---------------------------------------*/
+    header {
+        background-color: orange;
+        height: 270px;
+        -width: 70%;
+        margin: 0 auto;
+        color: white;
+    }
+
+    #mainH1 {
+        padding-top: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .logo {
+        position: relative;
+        top: -40px;
+        left: 20px;
+    }
+
+    ul {
+        position: relative;
+        left: 200px;
+        top: -60px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    li {
+        display: inline;
+        padding: 0px 20px;
+        font-size: 1.2em;
+
+    }
+
+    nav a {
+      color: white;
+    }
+
+    nav a:hover {
+        color: #f2f2f2;
+    }
+/*-------------------------------------
+                   MAIN  SECTION
+---------------------------------------*/
+
+
+    .container {
+        display: flex;
+    }
+
+    .right {
+        padding-left: 20px;
+        position: relative;
+        top: 50px;
+
+    }
+    .aboutP {
+
+    }
+
+    .title {
+        padding: 10px;
+        background-color: orange;
+        color: white;
+        margin: 10px 0;
+    }
+
+    .space {
+        height: 30px;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    .button-contact {
+        background-color: orange;
+        color: white;
+        border: 1px solid orange;
+        border-radius: 8px;
+        font-size: 1.5em;
+        margin: 10px;
+        padding: 10px;
+        position: relative;
+        top: 10px;
+        left: 200px;
+
+
+    }
+
+    .project {
+      width: 33%;
+      display: inline-block;
+      position: relative;
+
+
+    }
+
+    img {
+      margin: 0 auto;
+      -background-color: blue;
+      padding: 10px 0;
+    }
+
+    .project p {
+      background-color: #eee;
+      padding: 10px;
+      color: #000;
+    }
+
+    .project h3 {
+      background-color: orange;
+      font-size: 18px;
+      padding: 10px;
+      color: white;
+    }
+
+    .project-img {
+      position: relative;
+      left: 40px;
+    }
+
+    a {
+      text-decoration: none;
+
+    }
+
+    a .button {
+      -webkit-appearance: button;
+      -moz-appearance: button;
+      appearance: button;
+
+      text-decoration: none;
+      color: initial;
+
+    }
+
+    a:hover {
+      cursor: pointer;
+    }
+
+    form {
+      width: 50%;
+      padding: 10px;
+      border: 1px solid orange;
+    }
+
+    label {
+      padding: 10px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      margin: 10px;
+    }
+
+    label {
+      color: orange;
+    }
+
+    .send:hover {
+      color: orange;
+
+    }
+
+    .services {
+      width: 33%;
+    }
+
+    .skills {
+      font-weight: bold;
+      color: orange;
+      
+    }
+
+
+
+
+
+
+/*-------------------------------------
+                    FOOTER   SECTION
+---------------------------------------*/
+
+footer {
+  margin-top: 20px;
+  background-color: orange;
+  color: white;
+  height: 200px;
+}
+
+footer p {
+  text-align: center;
+  padding-top: 20px;
+  position: relative;
+  top: 145px;
+}

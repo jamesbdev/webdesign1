@@ -1,0 +1,274 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#wrapper{
+	width:600px;
+	margin:100px auto 0;
+	border:1px dashed red;
+}
+
+.clearFix{
+	clear:both;
+}
+
+.col{
+	border:1px solid #000;
+	width:250px;
+	float:left;
+	margin:20px;
+}
+
+
+#col1{
+	
+}
+
+
+p{
+	border:1px solid #000;
+	width:100px;
+	margin:10px;
+}
+
+
+/*
+CSS POSITIONING:
+==========================================
+*STATIC:
+==========================================
+as a default ALL elements have position:
+	static except <HTML>
+
+
+
+==========================================
+*RELATIVE
+==========================================
+- the element is still in the document flow
+- other elements will still see it and its
+	original position
+- its original position will be preserved
+- you can position the element in reference
+	to its ORIGINAL POSITION
+- you can use top, left, right, bottom [+ / -]
+*/
+/*
+#par3 {
+	background-color: red;
+	color: #fff;
+	position: relative;
+	top:50px;
+	left:50px;
+}
+*/
+/*#par3:hover {
+	left:50px;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+==========================================
+POSITION ABSOLUTE:
+==========================================
+- the element is not in the flow anymore
+- other elements and its container cannot
+	see it
+- its original position is gone
+- you move it in reference to ITS FIRST
+	NON-STATIC (positioned) ANCESTOR
+- if there's no positioned ancestor,
+	the reference is html
+*/
+
+
+/*
+#parC {
+	background-color: green;
+	color: #fff;
+	position: absolute;
+	top:50px;
+	left:50px;
+}
+*/
+
+
+
+/*------------------examples*/
+/*
+#wrapper {
+	position: relative;  }
+
+#col2 {
+	position: relative;  }
+
+#col1 {
+	position: static;  }
+
+#par3 {
+	background-color: red;
+	color: #fff;
+	position: relative;
+	top:50px;
+	right:50px;
+}
+*/
+
+
+/*#parC {
+	background-color: green;
+	color: #fff;
+	position: absolute;
+	top:150px;
+	left:50%;
+}*/
+
+/*
+
+#par3 {
+	background-color: red;
+	color: #fff;
+	position: relative;
+	bottom:50px;
+	top:50px;
+
+	left:50px;
+	right:50px;
+}
+*/
+
+
+
+
+
+
+
+
+
+/*
+==========================================
+position: FIXED
+==========================================
+- the element is outside of the flow
+- its original position is lost
+- the element will move in
+	reference to the viewport
+- the element will stay there
+	and it will not scroll
+*/
+
+#par3 {
+	background-color: red;
+	color: #fff;
+	width: 400px;
+	height: 100px;
+	position: fixed;
+	top:50px;
+	left:calc(50% - calc(400px / 2) );
+}
+
+
+
+
+
+
+
+
+
+/*
+==========================================
+position: STICKY
+==========================================
+- the element starts with a relative position
+- after a certain scrolling position,
+	the element turns into fixed
+- now well supported
+- once the element reaches given top offset,
+	it will not scroll anymore
+- only works with top coordinate
+*/
+
+#sticky {
+	background-color: blue;
+	color: #fff;
+	position: sticky;
+	top:50px;
+}
+
+
+
+
+
+
+
+
+
+/*
+==========================================
+Z-INDEX:
+==========================================
+
+- you can simulate the third dimension
+- you can create something similar to
+	photoshop layers
+- it will only work with non static elements
+- the element with the bigger z-index
+	will appear on top of smaller
+	z-indexed values
+*/
+
+#par3 {
+	z-index: 20;
+}
+
+#sticky {
+	z-index: 40;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

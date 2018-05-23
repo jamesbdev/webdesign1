@@ -1,0 +1,7 @@
+MARKUP VALIDATOR
+https://validator.w3.org/
+
+CSS VALIDATOR 
+https://jigsaw.w3.org/css-validator/
+
+http://csslint.net/

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>TRAINING DRAGON - WD course - learn HTML</title>
+</head>
+
+<body>
+    <!--
+        this is a multi line HTML comment
+        * comments are not meant to be displayed
+        * use comments to describe your code
+        * do not nest comments
+        * USE COMMENTS!!!! THEY WILL SAVE YOUR LIFE!!!
+    -->
+
+    <!--
+        SHORTCUTS
+        WEB STORM web editor:
+
+        Ctrl + S			=>	SAVE
+        Ctrl + SHIFT + S	=>  SAVE AS
+        Ctrl + C			=>	COPY
+        Ctrl + D			=>	DUPLICATE LINE
+        Ctrl + X			=>	CUT
+        Ctrl + V			=>	PASTE
+        Ctrl + Z			=>	UNDO
+        Ctrl + SHIFT + Z	=>	REDO
+        Ctrl + ALT + T		=>	WRAP TAG
+        Ctrl + SPACEBAR		=>	HINT MENU
+
+        IN THE BROWSER
+        Ctrl + U			=>	SOURCE CODE
+        Ctrl + R (F5)		=>	REFRESH PAGE
+
+        CUSTOM WEBSTORM SHORTCUTS
+        Ctrl + SHIFT + /	=>	HTML / CSS / JS comments
+    -->
+
+    <h1>LEARN HTML</h1>
+    <h2>headings</h2>
+    <!--
+        HEADINGS
+        * h1 to h6
+        * use heading to give title to sections / sub sections
+        * at least one h1 per page
+        * headings are BLOCK ELEMENTS: they will break the line they're in
+        and generate some spacing
+
+    -->
+    <!--tagname+TAB-->
+    <h1>this is h1</h1>
+    <h2>this is h2</h2>
+    <h3>this is h3</h3>
+    <h4>this is h4</h4>
+    <h5>this is h5</h5>
+    <h6>this is h6</h6>
+
+    <br /><br /><br /><br />
+    <h2>paragraphs</h2>
+    <!--
+        * p tags
+        * p tags are BLOCK elements
+        * p cannot contain block elements
+        * use p tags to wrap / organize regular text / inline content
+    -->
+    <!--
+    p+tab
+    p*5
+    p{this is a p tag}*5
+    -->
+    <p>this is a p tag</p>
+    <p>this is a p tag</p>
+    <p>this is a p tag</p>
+    <p>this is a p tag</p>
+    <p>
+        this is a p tag
+        this is a p tag
+        this is a p tag
+        this is a p tag
+        this is a p tag
+    </p>
+
+
+    <br /><br /><br /><br />
+    <h2>divs</h2>
+    <!--
+        * DIV tag
+        * div tags are containers
+        * div tags are BLOCK elements
+        * stand for divisions
+        * used as boxes to organize / arrange elements and generate layouts
+    -->
+    <!--
+    div*2>p*2
+    div*2>p{this is a p tag within a div tag}*2
+    -->
+    <div>
+        <p>this is a p tag within a div tag</p>
+        <p>this is a p tag within a div tag</p>
+    </div>
+    <div>
+        <p>this is a p tag within a div tag</p>
+        <p>this is a p tag within a div tag</p>
+    </div>
+
+
+
+    <br /><br /><br /><br />
+    <h2>images</h2>
+    <!--
+    * img tags
+    * img are self closing tags
+    * imgs are INLINE elements: will not break the line
+        - they will allow some more content to
+        follow on same line
+    * IMG ATTRIBUTES
+    <img
+        * src => SOURCE : path and filename
+        * width & height => real size in Pixels (px)
+        * alt => MANDATORY!! alternative text
+            * to describe the pic in case of broken
+                path or corrupted file etc..
+            * title => tooltip
+            * to describe the pic for search engines
+            * ACCESSIBILITY : screen readers
+                will read the alt text
+    />
+    -->
+    <!--div>p>img
+    div>p+img-->
+
+    <div>
+        <p>
+            this is a p tag with an image
+            <img src="pic.jpg" width="299" height="201" alt="nice islands" title="james bond island">
+            some more text here
+        </p>
+    </div>
+
+
+    <br /><br /><br /><br />
+    <h2>anchors</h2>
+<!--
+    * a tags
+    * a tags are inline elements
+    * pieces of clickable content => will send the user somewhere else
+        * another website
+        * another page of same website
+        * a particular place of a page
+    * a ATTRIBUTES:
+        * href => the place we we want to send the user to
+        * title => tooltip
+        * target => use _blank
+-->
+    <!--div>p{this is a p tag}>a{here}-->
+    <div>
+        <p>
+            this is a p tag. Click
+            <!--
+            use ABSOLUTE URLs to go to
+            different websites
+            http(s)://.....
+            -->
+            <a href="http://google.co.uk" title="google it!" target="_blank">here</a>
+            to visit google homepage.
+        </p>
+    </div>
+
+
+
+<!--
+    EXERCISE IN CLASS
+    * download a bbc logo
+    * insert a p tag with some text
+    * insert bbc logo => click on logo to go to bbc homepage
+        opening a new tab
+    * do not forget the tooltip
+
+-->
+
+    <!--div>p>a>img-->
+    <div>
+        <p> click on bbc logo:
+            <a href="https://bbc.co.uk/" target="_blank">
+                <img src="bbc.png" width="128" height="128" alt="bbc logo" title="read bbc news">
+            </a>
+        </p>
+    </div>
+
+
+    <br /><br /><br /><br />
+    <h2>lists</h2>
+<!--
+    OL, UL, LI are all block elements
+
+-->
+    <h3>Ordered lists</h3>
+    <!--ol>li{list item}*3
+    ol>li{list item no $}*3-->
+    <ol>
+        <li>list item no 1</li>
+        <li>list item no 2</li>
+        <li>list item no 3</li>
+    </ol>
+
+
+    <h3>Unordered lists</h3>
+    <ul>
+        <li>list item no 1</li>
+        <li>list item no 2</li>
+        <li>list item no 3</li>
+    </ul>
+
+    <h3>simulating a navigation with a list of 3 links</h3>
+    <!--ul>li*3>a-->
+    <ul>
+        <li>
+            <a href="http://google.co.uk" target="_blank" title="google">google</a>
+        </li>
+        <li>
+            <a href="http://bing.co.uk" target="_blank" title="bing">bing</a>
+        </li>
+        <li>
+            <a href="http://yahoo.co.uk" target="_blank" title="yahoo">yahoo</a>
+        </li>
+    </ul>
+
+
+
+
+
+    <br /><br /><br /><br /><!--breaking lines-->
+    <hr /><!--horizontal rule-->
+    <h2>html presentation (avoid!!)</h2>
+    <h3>deprecated tags</h3>
+
+    <p>this is some <b>bold</b> text</p>
+    <p>this is some <i>italic</i> text</p>
+    <p>this is some <u>underlined</u> text</p>
+    <p>this is some <strike>striked</strike> text</p>
+    <p>this is some <center>centred</center> text</p>
+    <p>this is some <sup>superscript</sup> text</p>
+    <p>this is some <sub>subscript</sub> text</p>
+    <p>this is some <font color="red">red</font> text</p>
+    <p>this is some <font size="7">bigger</font> text</p>
+    <p>this is some <font face="Lucida Sans Unicode, Lucida Grande, sans-serif">lucida</font> text</p>
+    <hr /><!--horizontal rule-->
+    <br /><br /><!--breaking lines-->
+
+
+    <h3>careful! strong and em are NOT deprecated</h3>
+    <p>this is some <strong>strong</strong> text</p>
+    <p>this is some <em>emphasised</em> text</p>
+
+
+
+
+    <br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br />
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

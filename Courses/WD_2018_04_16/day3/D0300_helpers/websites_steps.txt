@@ -1,0 +1,15 @@
+STEP BY STEP GUIDE TO CODE A NEW WEBSITE:
+
+0) HAVE YOUR PLAN DONE! (sitemap, wireframe, mockup)
+
+1) create folders and files (index.html, assets, css, imgs,  etc..)
+
+2) identify structure and skeleton in mockup (header / main / footer etc..)
+
+3) create markup skeleton (a div for each section: wrapper, header, main, footer, etc.. )
+
+4) connect html file to css stylesheet (<link> tag in <head>)
+
+5) insert a css reset at the top of your css file (eg eric meyer's css reset revisited)
+
+6) insert markup, style elements, repeat

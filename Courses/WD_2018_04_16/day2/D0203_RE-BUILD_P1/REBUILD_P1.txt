@@ -1,0 +1,299 @@
+===========================================
+REBUILD P1 - quick copy and paste exercise
+-------------------------------------------
+this simple exercise is meant to help you
+reviewing all different phases and steps we
+followed to build project 1.
+please follow given instructions carefully
+copying and pasting code in suggested files
+at the right place
+===========================================
+
+
+
+
+---------------------------------------------------------------------
+STEP 1: copy  html5 skeleton  and paste it into INDEX.HTML (inside body tag)
+---------------------------------------------------------------------
+<!--.wrapper>header+main+footer-->
+<div class="wrapper">
+    <header>
+    </header>
+
+    <main>
+    </main>
+
+    <footer>
+    </footer>
+</div><!--/wrapper-->
+
+
+
+
+
+----------------------------------------------------------------------------
+STEP 2: add css reset code at the top of css/STYLE.CSS (copy from css_reset.css)
+----------------------------------------------------------------------------
+
+
+
+
+--------------------------------------------------------------------------------------------------------
+STEP 3: add a title tag, connect style.css to index.html using a link tag in INDEX.HTML
+(inside head tag)
+--------------------------------------------------------------------------------------------------------
+<title>TrainingDragon Project 1 | The Art Of Origami</title>
+<link rel="stylesheet" href="css/style.css" media="screen">
+
+
+
+
+
+
+
+
+------------------------------------
+STEP 4: general section in STYLE.CSS
+------------------------------------
+
+/*--------------------
+       general section
+---------------------*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inner{
+    width: 960px;
+    margin: 0 auto;
+    /*background-color: #98EAE0;*/
+}
+
+.rightAligned {
+    float: right;
+}
+
+.row{
+    display: flex;
+}
+
+
+
+
+
+
+---------------------------------------------------
+STEP 5: add content into <HEADER> in INDEX.HTML
+---------------------------------------------------
+
+            <div class="inner">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="imgs/logo.jpg" width="297" height="370" alt="logo">
+                    </a>
+                </div><!--/logo-->
+
+                <div class="banner">
+                    <img src="imgs/rhino.png" width="960" height="400" alt="rhino banner">
+                </div><!--/banner-->
+            </div><!--/inner-->
+
+            <nav class="topNav">
+                <!--ul>li*6>a[href=#]-->
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="gallery.html">gallery</a></li>
+                    <li><a href="about-us.html">about us</a></li>
+                    <li><a href="#">news</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">contacts</a></li>
+                </ul>
+            </nav><!--/topNav-->
+
+
+
+
+
+
+
+--------------------------------------------------
+STEP 6: style header in STYLE.CSS (header section)
+--------------------------------------------------
+/*--------------------
+        header section
+---------------------*/
+header{
+    background-color: #F0F0F0;
+}
+
+
+.logo{
+    text-align: center;
+}
+
+.banner{
+    margin-top:-180px;
+}
+
+
+
+.topNav ul{
+    /*list-style: circle;
+    list-style: disc;
+    list-style: katakana-iroha;
+    list-style: cjk-ideographic;
+    list-style: hebrew;
+    list-style: armenian;
+    list-style-image: url("../imgs/thumbs/2_235x237.jpg");*/
+    background-color: #9F146C;
+    display: flex;
+    /*justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    flex-direction: row;
+    flex-direction: row-reverse;
+
+    use align-content to arrange elements vertically
+    */
+    justify-content: space-around;
+
+}
+
+
+.topNav a{
+    color: #fff;
+    background-color: #9F146C;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+/*
+PSEUDO CLASSES style a certain state of the element
+el:hover => when we put the mouse cursor on top of the element
+
+el:active => when we click and hold left mouse button on top of the element
+*/
+
+.topNav a:hover{
+    color: #9F146C;
+    background-color: white;
+}
+
+
+.topNav a:active{
+    text-decoration: underline;
+}
+
+
+
+--------------------------------------------
+STEP 7: add content into MAIN in INDEX.HTML
+--------------------------------------------
+     <div class="inner homeContent">
+        <h1 class="underlined">The art of origami</h1>
+        <img src="imgs/stag-beetle.jpg"
+             width="301" height="253" alt="stag beetle"
+             class="rightAligned">
+        <p>
+            Origami (折り紙 from ori meaning "folding", and kami meaning "paper"; kami changes to gami due to rendaku) is the traditional Japanese art of paper folding, which started in the 17th century AD at the latest and was popularized outside of Japan in the mid-1900s. It has since then evolved into a modern art form. The goal of this art is to transform a flat sheet of material into a finished sculpture through folding and sculpting techniques, and as such the use of cuts or glue are not considered to be origami. Paper cutting and gluing is usually considered kirigami.
+        </p>
+        <p>
+            The number of basic origami folds is small, but they can be combined in a variety of ways to make intricate designs. The best known origami model is probably the Japanese paper crane. In general, these designs begin with a square sheet of paper whose sides may be different colors or prints. Traditional Japanese origami, which has been practiced since the Edo era (1603–1867), has often been less strict about these conventions, sometimes cutting the paper or using nonsquare shapes to start with.
+            The principles of origami are also being used in stents, packaging and other engineering structures.
+            There is much speculation about the origin of Origami.
+        </p>
+        <p>
+            While Japan seems to have had the most extensive tradition, there is evidence of an independent tradition of paperfolding in China, as well as in Germany, Italy and Spain among other places. However, because of the problems associated with preserving origami, there is very little direct evidence of its age or origins, aside from references in published material.
+            In China, traditional funerals include burning folded paper, most often representations of gold nuggets (yuanbao). It is not known when this practice started, but it seems to have become popular during the Sung Dynasty (905–1125 CE). The paper folding has typically been of objects like dishes, hats or boats rather than animals or flowers.
+        </p>
+
+
+        <h2 class="underlined">Types of origami</h2>
+        <p>
+            Origami not only covers still-life, there are also moving objects; Origami can move in clever ways. Action origami includes origami that flies, requires inflation to complete, or, when complete, uses the kinetic energy of a person's hands, applied at a certain region on the model, to move another flap or limb. Some argue that, strictly speaking, only the latter is really "recognized" as action origami. Action origami, first appearing with the traditional Japanese flapping bird, is quite common. One example is Robert Lang's instrumentalists; when the figures' heads are pulled away from their bodies, their hands will move, resembling the playing of music.
+        </p>
+
+        <h2 class="underlined">Modular origami</h2>
+
+        <p>
+            Modular origami consists of putting a number of similar pieces together to form a complete model. Normally the individual pieces are simple but the final assembly may be tricky. Many of the modular origami models are decorative balls like kusudama, the technique differs though in that kusudama allows the pieces to be put together using thread or glue.
+            Chinese paper folding includes a style called 3D origami where large numbers of pieces are put together to make elaborate models. Sometimes paper money is used for the modules. This style originated from some Chinese refugees while they were detained in America and is also called Golden Venture folding from the ship they came on.
+        </p>
+    </div><!--/inner-->
+
+
+-----------------------------------------------
+STEP 8: style #main in STYLE.CSS (main section)
+-----------------------------------------------
+
+/*--------------------
+        main section
+---------------------*/
+
+.underlined {
+    border-bottom: 2px dotted #CDDA23;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+h1.underlined {
+    color:#9F146C;
+    font-size: 2.5em;
+    padding-top: 50px;
+}
+
+h2.underlined {
+    color: #666;
+    font-size: 1.5em;
+    padding-top: 20px;
+}
+
+
+.homeContent p {
+    word-spacing: 1.8px;
+    letter-spacing: 0.6px;
+    line-height: 20px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+
+
+-------------------------------------------
+STEP 9: add content to FOOTER (INDEX.HTML)
+-------------------------------------------
+
+        <div class="inner">
+                <!--
+                    use html entities to display symbols
+                    & + entityName + ;
+                -->
+                Training Dragon &copy; 2018
+        </div><!--/inner-->
+
+
+
+
+
+----------------------------------------------------
+STEP 10: style FOOTER in STYLE.CSS (FOOTER SECTION)
+----------------------------------------------------
+
+/*--------------------
+       footer section
+---------------------*/
+footer {
+    background-color: #CDDA23;
+    color: #fff;
+    padding:30px 0 120px;
+    margin-top: 40px;
+}
+
+

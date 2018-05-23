@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>learn css</title>
+    <!--
+    CSS approach no 2)
+    INTERNAL CSS using STYLE TAG
+    prone to duplication,
+    do not use this approach
+    (it would work for this page only :( )
+    -->
+    <!--<style>
+        p {
+            color: blue;
+        }
+    </style>-->
+
+    <!--
+        approach no 3
+        BEST PRACTICE:
+        use EXTERNAL css stylesheets
+    -->
+    <link rel="stylesheet" href="learnCSS.css" media="screen">
+    <!--
+    simulation of an alternative print version
+    <link rel="alternate stylesheet" href="print.css" media="print">-->
+</head>
+<body>
+    <!--
+        ruleset:
+
+        selector {
+            rules:
+            property : value ;
+            property : value ;
+            property : value ;
+        }
+    -->
+
+    <!--
+        keep it DRY (Don't Repeat Yourself)
+        or DIE (Duplication Is Evil)
+    -->
+
+
+    <h1>learn css</h1>
+    <!--p{this is a p tag}*10-->
+    <p class="box par">this is a p tag</p>
+    <p>this is a p tag</p>
+    <!--
+    approach no 1)
+    INLINE CSS using STYLE ATTRIBUTE
+    do not use this approach :(
+    -->
+    <!--<p style=" color: red;">this is a p tag</p>-->
+    <p class="box par">this is a p tag</p>
+
+    <!--
+    in HTML, IDs and CLASSes are ATTRIBUTES
+    -->
+
+    <!--
+        BLOCK LEVEL ELEMENTS sizing
+        default width : 100% (they will take all the space available horizontally)
+
+        default height: auto (content sets height)
+        block level elements with no content have default height of 0 (they will collapse)
+    -->
+
+
+
+    <p id="myPar">this is a p tag </p>
+    <p>this is a p tag</p>
+    <p class="box par">this is a p tag</p>
+    <p>this is a p tag</p>
+    <p class="box par"></p>
+    <p>this is a p tag</p>
+    <p class="box par">this is a p tag <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam culpa dolores earum fugiat illo incidunt itaque repellat sapiente sed voluptatum? Beatae expedita ut veritatis! Deserunt obcaecati officiis possimus sapiente tenetur!</span><span>Animi consequatur cumque eos et in laudantium perspiciatis reiciendis sed totam voluptas! Asperiores aspernatur earum ipsum nemo neque quas qui similique sit! Aspernatur at ea fuga iusto quod sunt tempore!</span><span>A accusamus adipisci aliquid aut consequuntur doloribus dolorum eius, eos fuga inventore laborum laudantium, maxime, odio officia omnis possimus praesentium quaerat quas quisquam quo ratione totam veniam voluptates! Delectus, officia.</span></p>
+    <p>this is a p tag</p>
+
+    <!--div*2>p{this is a p tag within a div}*2-->
+    <div>
+        <p>this is a p tag within a div</p>
+        <p>this is a p tag within a div</p>
+    </div>
+    <div class="containerDiv">
+        <p>this is a p tag within a div</p>
+        <p>this is a p tag within a div</p>
+    </div>
+
+    <div class="lastDiv">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequuntur cupiditate debitis
+        dicta dolore dolores et eveniet ex ipsam iusto libero magnam nemo nulla repellat, sequi soluta unde. Error,
+        praesentium. Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequuntur cupiditate debitis
+        dicta dolore dolores et eveniet ex ipsam iusto libero magnam nemo nulla repellat, sequi soluta unde. Error,
+        praesentium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequuntur cupiditate debitis
+        dicta dolore dolores et eveniet ex ipsam iusto libero magnam nemo nulla repellat, sequi soluta unde. Error,
+        praesentium. adipisicing elit. Animi consequuntur cupiditate debitis
+        dicta dolore dolores et eveniet ex ipsam iusto libero magnam nemo nulla repellat, sequi soluta unde. Error,
+        praesentium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequuntur cupiditate debitis
+        dicta dolore dolores et eveniet ex ipsam iusto libero magnam nemo nulla repellat, sequi soluta unde. Error,
+        praesentium.
+    </div><!--/lastDiv-->
+</body>
+</html>

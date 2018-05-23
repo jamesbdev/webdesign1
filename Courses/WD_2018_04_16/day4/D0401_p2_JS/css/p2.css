@@ -1,0 +1,169 @@
+/* =====================   CSS RESET SECTION ==== */
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0b2 | 201101 */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output,
+ruby, section, summary, time, mark,
+audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+img{vertical-align: top;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, menu, nav,
+section, canvas, main { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+/*======================= GENERAL SECTION ===*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #d6d6d6;
+    background-image: url("../imgs/TD.png");
+    background-repeat: no-repeat;
+    background-position: -90px -90px;
+    background-attachment: fixed;
+}
+
+#wrapper{
+    width: 960px;
+    margin: 0 auto;
+}
+
+/*======================= HEADER SECTION ===*/
+header{
+    border-bottom: 1px solid #fff;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 24px;
+    padding-top: 80px;
+    font-weight: bold;
+    color: #999999;
+    border-bottom: 1px solid #999999;
+    padding-bottom: 20px;
+}
+
+
+/*=======================  MAIN SECTION ===*/
+
+main{
+    margin-top: 50px;
+    /*css3 box shadows*/
+    box-shadow: 0px 0px 8px #666;
+    position: relative;
+    height: 635px;
+}
+
+
+/*======================= THUMBS SECTION ===*/
+.thumbs{
+    position: relative;
+    top: 56px;
+    left: 56px;
+    margin-bottom: 13px;
+    z-index: 20;
+    cursor: pointer;
+    /*box-shadow: 3px 3px 3px #333;*/
+}
+
+.thumbs:active {
+    box-shadow: none;
+    position: relative;
+    top:57px;
+}
+
+/*======================= FRAMEDIVS  SECTION ===*/
+/*you are not allowed to modify the markup!!*/
+#frameDiv1{
+    position: absolute;
+    top: 28px;
+    left: 28px;
+    width: 204px;
+    height: 581px;
+    background-color: #fff;
+    z-index: 10;
+}
+
+
+#frameDiv2{
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    width: 693px;
+    height: 581px;
+    background-color: #fff;
+    z-index: 10;
+    background-image: url("../imgs/03_Pictures/Gallery_00.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/*=======================  FOOTER SECTION ===*/
+footer{
+    border-top: 1px solid #999;
+    margin-top: 50px;
+}
+
+footer p{
+    font-size: 16px;
+    font-weight: bold;
+    color: #999999;
+    border-top: 1px solid #fff;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+/*=======================  FIXED SECTION ===*/
+
+#fixed{
+    width: 80px;
+    height: 50px;
+    position: fixed;
+    top: 100px;
+    right: 0px;
+    z-index: 30;
+    background-image: url("../imgs/fixed.png");
+    cursor: pointer;
+}
+
+#fixed:active{
+    width: 90px;
+    background-position: 0px 50px;
+}
+
+
+
+/*=======================  SECTION ===*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

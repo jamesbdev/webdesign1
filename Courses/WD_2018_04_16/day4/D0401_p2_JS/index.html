@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>simple js gallery</title>
+    <link rel="stylesheet" href="css/p2.css" media="screen"/>
+    <!--favicon-->
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.ico"/>
+    <!--<meta name="..." content="...">-->
+    <meta name="author" content="Training Dragon">
+    <!-- description -->
+    <meta name="description" content="this is a demo for a WD course">
+    <!-- keywords -->
+    <meta name="keywords" content="Web Design courses, IT courses London, Training Dragon">
+    <!-- this will hide your page from search engines -->
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>JS driven gallery</h1>
+        </header>
+
+        <main>
+<!--
+the easiest way to associate handlers to events is to use HTML attributes
+*** this is NOT a good practice ***
+-->
+
+            <p>
+                <span>
+                    <img onclick="showPic1();" class="thumbs" src="imgs/02_Thumbs/Thumb_01.jpg" width="148" height="121" alt="thumbnail"/>
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <img onclick="showPic2();" class="thumbs" src="imgs/02_Thumbs/Thumb_02.jpg" width="148" height="121" alt="thumbnail"/>
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <img onclick="showPic3();" class="thumbs" src="imgs/02_Thumbs/Thumb_03.jpg" width="148" height="121" alt="thumbnail"/>
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <img onclick="showPic4();" class="thumbs" src="imgs/02_Thumbs/Thumb_04.jpg" width="148" height="121" alt="thumbnail"/>
+                </span>
+            </p>
+
+            <div id="frameDiv1"></div>
+            <div id="frameDiv2"></div>
+
+        </main>
+
+        <footer>
+            <p>Training Dragon &copy; 2018</p>
+        </footer>
+
+        <div id="fixed"></div>
+    </div><!--/wrapper-->
+
+
+<!--
+    BEST PRACTICE:
+    include your EXTERNAL JS scripts at the bottom,
+    right before you close the body tag
+-->
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
